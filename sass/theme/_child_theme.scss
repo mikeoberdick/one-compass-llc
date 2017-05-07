@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5 {
 body {
 	color: #b2b2b2;
 	font-family: 'open-sans', sans-serif;
+	background-color: #000;
+}
+
+.horizontalSep {
+	height: 24px;
+	background-image: url('../img/hr.png');
+	background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*------------------------------------------------*/
@@ -30,6 +38,15 @@ body {
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
+
+.wrapper-navbar {
+	background-color: #000;
+    padding-top: 50px;
+}
+
+.navbar {
+	background-color: #666666;
+}
 
 #navbarNavDropdown {
 	justify-content: flex-end;
@@ -44,6 +61,23 @@ body {
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
 
+.page {
+	.wrapper {
+		padding-top: 0;
+
+		.photoHeader {
+			padding: 0;
+		}
+	}
+}
+
+/* HOMEPAGE */
+
+.heroSection {
+	background-size: cover;
+    background-position: center center;
+}
+
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
@@ -55,6 +89,7 @@ body {
 /*------------------------------------------------*/
 
 #wrapper-footer {
+	background-color: $brand-primary;
 	color: $brand-secondary;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -69,7 +104,7 @@ body {
 			padding-bottom: 5px;
 		    border-bottom: solid 2px;
 		    text-transform: uppercase;
-		    color: $brand-primary
+		    color: $brand-secondary
 		}
 
 	ul {
@@ -80,7 +115,7 @@ body {
 			margin-bottom: 5px;
 
 			a {
-				color: $brand-primary;
+				color: $brand-secondary;
 				text-transform: uppercase;
 				font-size: 12px;
 
@@ -93,7 +128,7 @@ body {
 }
 
 #bottomFooter {
-	background-color: $brand-primary;
+	background-color: $brand-secondary;
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
