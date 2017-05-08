@@ -27,7 +27,7 @@
 	<div class="row mb-5">
 		<div class = "col-sm-12 text-center">
 			<div class = "horizontalSep"></div>
-			<a href = "#" class = "mr-3">About Us</a><a href = "#">Contact Us</a>
+			<a href = "<?php echo bloginfo('url'); ?>/about" class = "mr-3">About Us</a><a href = "<?php echo bloginfo('url'); ?>/contact">Contact Us</a>
 		</div>
 	</div><!-- .row -->
 

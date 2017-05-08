@@ -52,6 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="site-info">
 					
 					<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span><br />
+					<p>Follow Us On <a href = "#"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
 					<span>Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
 
 					</div><!-- .site-info -->
