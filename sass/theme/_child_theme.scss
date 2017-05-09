@@ -52,6 +52,12 @@ body {
 	justify-content: flex-end;
 }
 
+#headerLogo {
+	position: absolute;
+    top: -20px;
+    z-index: 1;
+}
+
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/
 /*------------------------------------------------*/
@@ -76,6 +82,7 @@ body {
 .heroSection {
 	background-size: cover;
     background-position: center center;
+    min-height: 450px;
 }
 
 

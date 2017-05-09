@@ -5,7 +5,7 @@
 <div class="container-fluid heroSection mb-5" style = "background-image: url('<?php the_field('homepage_hero_image', 'option'); ?>')">
 	<div id = "opacityLayer">
 		<div class="row">
-			<div id = "hpCTA" class = "col-sm-12 text-center mb-3">
+			<div id = "hpCTA" class = "col-sm-12 text-center mt-5 mb-5">
 				<h1><?php the_field('homepage_call_to_action', 'option'); ?></h1>
 			</div>		
 		</div><!-- .row -->
