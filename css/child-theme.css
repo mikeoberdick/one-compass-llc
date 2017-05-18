@@ -9245,25 +9245,29 @@ Template:    Understrap
 /*-----------------[BASIC STYLES]-----------------*/
 /*------------------------------------------------*/
 h1, h2, h3, h4, h5 {
-  color: #0db02b;
-  font-family: 'Nunito', sans-serif; }
+  color: #0db02b; }
 
 body {
-  color: #ffffff;
+  color: #b2b2b2;
   font-family: 'open-sans', sans-serif;
-  background-color: #000;
-  font-family: 'Nunito', sans-serif; }
+  background-color: #000; }
 
-a {
-  color: #ffffff; }
-  a:hover {
-    color: #0db02b; }
-
-.horizontalSep {
+.lgHorizontalSep {
   height: 24px;
   background-image: url("../img/hr.png");
   background-repeat: no-repeat;
   background-position: center; }
+
+.horizontalSep {
+  height: 24px;
+  background-image: url("../img/nav_hr.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+a {
+  color: #ffffff; }
+  a:hover {
+    text-decoration: none; }
 
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
@@ -9276,7 +9280,8 @@ a {
   padding-top: 100px; }
 
 .navbar {
-  background-color: #373332; }
+  background-color: #666666;
+  border-bottom: solid 10px #000000; }
   .navbar a {
     color: #ffffff; }
     .navbar a:hover {
@@ -9287,12 +9292,15 @@ a {
 
 #headerLogo {
   position: absolute;
-  top: -90px;
-  z-index: 1; }
+  top: -85px;
+  z-index: 1;
+  height: 125px;
+  width: 125px; }
 
 .siteTitle {
-  margin-left: 205px;
-  width: 100%; }
+  color: #ffffff;
+  width: 100%;
+  margin-left: 161px; }
 
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/
@@ -9310,6 +9318,14 @@ a {
   background-size: cover;
   background-position: center center;
   min-height: 450px; }
+  .heroSection .hpCTA {
+    color: #ffffff; }
+  .heroSection .opacityLayer {
+    min-height: 450px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
@@ -9319,13 +9335,14 @@ a {
 /*------------------------------------------------*/
 #wrapper-footer {
   background-color: #0db02b;
-  color: #ffffff;
+  color: #000000;
   padding-top: 0;
   padding-bottom: 0;
   text-transform: uppercase;
   font-size: 12px; }
   #wrapper-footer #footerWidgets {
-    padding: 50px 0; }
+    padding: 25px 0;
+    color: #ffffff; }
   #wrapper-footer h5 {
     padding-bottom: 5px;
     border-bottom: solid 2px;
@@ -9337,11 +9354,10 @@ a {
     #wrapper-footer ul li {
       margin-bottom: 5px; }
       #wrapper-footer ul li a {
-        color: #ffffff;
+        color: #000000;
         text-transform: uppercase;
         font-size: 12px; }
         #wrapper-footer ul li a:hover {
-          color: #0db02b;
           text-decoration: none; }
 
 #bottomFooter {

@@ -3,13 +3,15 @@
 ?>
 
 <div class="container-fluid heroSection mb-5" style = "background-image: url('<?php the_field('homepage_hero_image', 'option'); ?>')">
-	<div id = "opacityLayer">
-		<div class="row">
-			<div id = "hpCTA" class = "col-sm-12 text-center mt-5 mb-5">
-				<h1><?php the_field('homepage_call_to_action', 'option'); ?></h1>
-			</div>		
+	<div class="row">
+		<div class = "col-sm-12 opacityLayer">
+					<h2 class = "mb-5 text-center pl-5 pr-5 hpCTA"><?php the_field('homepage_call_to_action', 'option'); ?></h2>
+
+					<div class = "hpButton text-center">
+						<a href = "<?php the_field('hyperlink', 'option'); ?>"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
+				</div>
+			</div><!-- #opacityLayer -->	
 		</div><!-- .row -->
-	</div><!-- #opacityLayer -->
 </div><!-- .container-fluid -->
 
 <div class="container">

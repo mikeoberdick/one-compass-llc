@@ -38,9 +38,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
+
 			<a href = "<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
 			<div class = "siteTitle"><?php echo bloginfo('name') ?></div>
-			
+
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 					</button>

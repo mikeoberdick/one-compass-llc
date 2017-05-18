@@ -14,29 +14,34 @@ Template:    Understrap
 
 h1, h2, h3, h4, h5 {
 	color: $brand-primary;
-	font-family: 'Nunito', sans-serif;
 }
 
 body {
-	color: #ffffff;
+	color: #b2b2b2;
 	font-family: 'open-sans', sans-serif;
 	background-color: #000;
-	font-family: 'Nunito', sans-serif;
+}
+
+.lgHorizontalSep {
+	height: 24px;
+	background-image: url('../img/hr.png');
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.horizontalSep {
+	height: 24px;
+	background-image: url('../img/nav_hr.png');
+	background-repeat: no-repeat;
+    background-position: center;
 }
 
 a {
 	color: #ffffff;
 
 	&:hover {
-		color: $brand-primary;
+		text-decoration: none;
 	}
-}
-
-.horizontalSep {
-	height: 24px;
-	background-image: url('../img/hr.png');
-	background-repeat: no-repeat;
-    background-position: center;
 }
 
 /*------------------------------------------------*/
@@ -55,7 +60,8 @@ a {
 }
 
 .navbar {
-	background-color: $brand-tertiary;
+	background-color: #666666;
+	border-bottom: solid 10px #000000;
 
 	a {
 		color: #ffffff;
@@ -72,13 +78,16 @@ a {
 
 #headerLogo {
 	position: absolute;
-    top: -90px;
+    top: -85px;
     z-index: 1;
+    height: 125px;
+    width: 125px;
 }
 
 .siteTitle {
-	margin-left: 205px;
-	width: 100%;
+	color: #ffffff;
+    width: 100%;
+    margin-left: 161px;
 }
 
 /*------------------------------------------------*/
@@ -106,6 +115,18 @@ a {
 	background-size: cover;
     background-position: center center;
     min-height: 450px;
+
+    .hpCTA {
+    	color: #ffffff;
+    }
+
+    .opacityLayer {
+    	min-height: 450px;
+    	background-color: rgba(0,0,0,.5);
+    	display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+    }
 }
 
 
@@ -120,21 +141,22 @@ a {
 
 #wrapper-footer {
 	background-color: $brand-primary;
-	color:#ffffff;
+	color: $brand-secondary;
 	padding-top: 0;
 	padding-bottom: 0;
 	text-transform: uppercase;
 	font-size: 12px;
 
 	#footerWidgets {
-		padding: 50px 0;
+		padding: 25px 0;
+		color: #ffffff;
 	}
 
 	h5 {
 			padding-bottom: 5px;
 		    border-bottom: solid 2px;
 		    text-transform: uppercase;
-		    color: #ffffff;
+		    color: #ffffff;;
 		}
 
 	ul {
@@ -145,12 +167,11 @@ a {
 			margin-bottom: 5px;
 
 			a {
-				color: #ffffff;
+				color: $brand-secondary;
 				text-transform: uppercase;
 				font-size: 12px;
 
 				&:hover {
-					color: $brand-primary;
 					text-decoration: none;
 				}
 			}

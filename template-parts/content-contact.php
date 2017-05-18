@@ -2,13 +2,15 @@
 //About Page Content
 ?>
 
-<div class="container-fluid">
+<?php if( get_field('contact_photo_header', 'option') ): ?>
+	<div class="container-fluid">
 	<div class="row mb-5">
 		<div class = "photoHeader col-sm-12">
 			<img src = "<?php the_field('contact_photo_header', 'option'); ?>">
 		</div>		
 	</div><!-- .row -->
 </div><!-- .container-fluid -->
+<?php endif; ?>
 
 <div class="container">
 	<header class="entry-header">
@@ -37,6 +39,12 @@
 		</div>
 
 	</div><!-- .row -->
+
+	<div class = "row mb-3">
+		<div class = "col-sm-12">
+			<p><?php the_field('contact_content', 'option'); ?></p>
+		</div>
+	</div>
 
 	<div class="row mb-5">
 		<div class = "col-sm-12 text-center">
