@@ -14,12 +14,22 @@ Template:    Understrap
 
 h1, h2, h3, h4, h5 {
 	color: $brand-primary;
+	font-family: 'Nunito', sans-serif;
 }
 
 body {
-	color: #b2b2b2;
+	color: #ffffff;
 	font-family: 'open-sans', sans-serif;
 	background-color: #000;
+	font-family: 'Nunito', sans-serif;
+}
+
+a {
+	color: #ffffff;
+
+	&:hover {
+		color: $brand-primary;
+	}
 }
 
 .horizontalSep {
@@ -41,11 +51,19 @@ body {
 
 .wrapper-navbar {
 	background-color: #000;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .navbar {
-	background-color: #666666;
+	background-color: $brand-tertiary;
+
+	a {
+		color: #ffffff;
+
+		&:hover {
+			color: $brand-primary;
+		}
+	}
 }
 
 #navbarNavDropdown {
@@ -54,8 +72,13 @@ body {
 
 #headerLogo {
 	position: absolute;
-    top: -20px;
+    top: -90px;
     z-index: 1;
+}
+
+.siteTitle {
+	margin-left: 205px;
+	width: 100%;
 }
 
 /*------------------------------------------------*/
@@ -97,7 +120,7 @@ body {
 
 #wrapper-footer {
 	background-color: $brand-primary;
-	color: $brand-secondary;
+	color:#ffffff;
 	padding-top: 0;
 	padding-bottom: 0;
 	text-transform: uppercase;
@@ -111,7 +134,7 @@ body {
 			padding-bottom: 5px;
 		    border-bottom: solid 2px;
 		    text-transform: uppercase;
-		    color: $brand-secondary
+		    color: #ffffff;
 		}
 
 	ul {
@@ -122,11 +145,12 @@ body {
 			margin-bottom: 5px;
 
 			a {
-				color: $brand-secondary;
+				color: #ffffff;
 				text-transform: uppercase;
 				font-size: 12px;
 
 				&:hover {
+					color: $brand-primary;
 					text-decoration: none;
 				}
 			}
