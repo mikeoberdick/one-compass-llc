@@ -31,15 +31,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- .container -->
 
+</div><!-- wrapper end -->
+
 	<?php } ?>
 
-	<div id = "bottomFooter" class = "container-fluid">
+	<div id = "bottomFooter" class = "container">
 
 		<div class="row">
 
 			<div class="col-md-12">
 
-				<footer class="site-footer text-center" id="colophon">
+				<footer class="site-footer" id="colophon">
 
 					<div class="row site-info">
 						<div class ="col-sm-6">
@@ -47,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<p>Follow Us On <a href = "#"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
 						</div>
 						
-						<div class = "col-sm-6">
+						<div class = "col-sm-6 text-right">
 							<span>Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
 						</div>
 
@@ -59,9 +61,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div><!-- row end -->
 
-	</div><!-- .container-fluid -->
-
-</div><!-- wrapper end -->
+	</div><!-- .container -->
 
 </div><!-- #page-wrapper -->
 

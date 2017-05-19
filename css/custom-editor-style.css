@@ -9252,15 +9252,9 @@ body {
   font-family: 'open-sans', sans-serif;
   background-color: #000; }
 
-.lgHorizontalSep {
-  height: 24px;
-  background-image: url("../img/hr.png");
-  background-repeat: no-repeat;
-  background-position: center; }
-
 .horizontalSep {
   height: 24px;
-  background-image: url("../img/nav_hr.png");
+  background-image: url("../img/hr.png");
   background-repeat: no-repeat;
   background-position: center; }
 
@@ -9276,8 +9270,7 @@ a {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 .wrapper-navbar {
-  background-color: #000;
-  padding-top: 100px; }
+  background-color: #000; }
 
 .navbar {
   background-color: #666666;
@@ -9290,17 +9283,19 @@ a {
 #navbarNavDropdown {
   justify-content: flex-end; }
 
-#headerLogo {
-  position: absolute;
-  top: -85px;
-  z-index: 1;
-  height: 125px;
-  width: 125px; }
-
-.siteTitle {
-  color: #ffffff;
-  width: 100%;
-  margin-left: 161px; }
+.logoContainer {
+  height: 100px;
+  display: flex; }
+  .logoContainer #headerLogo {
+    position: relative;
+    z-index: 1;
+    height: 125px;
+    width: 125px; }
+  .logoContainer .siteTitle {
+    color: #ffffff;
+    margin-left: 25px;
+    margin-top: 15px;
+    font-size: 25px; }
 
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/
@@ -9364,7 +9359,8 @@ a {
   background-color: #000000;
   color: #fff;
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  font-size: 14px; }
   #bottomFooter a {
     color: #fff; }
     #bottomFooter a:hover {

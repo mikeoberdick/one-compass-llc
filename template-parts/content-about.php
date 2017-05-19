@@ -2,13 +2,15 @@
 //About Page Content
 ?>
 
-<div class="container-fluid">
+<?php if( get_field('about_photo_header', 'option') ): ?>
+	<div class="container-fluid">
 	<div class="row mb-5">
 		<div class = "photoHeader col-sm-12">
 			<img src = "<?php the_field('about_photo_header', 'option'); ?>">
 		</div>		
 	</div><!-- .row -->
 </div><!-- .container-fluid -->
+<?php endif; ?>
 
 <div class="container">
 	<header class="entry-header">
@@ -21,7 +23,7 @@
 		</div>
 	</div>
 
-<div class = "lgHorizontalSep mb-5"></div>
+<div class = "horizontalSep mb-5"></div>
 
 <?php if( have_rows('person', 'option') ): ?>
 <?php while( have_rows('person', 'option') ): the_row(); ?>

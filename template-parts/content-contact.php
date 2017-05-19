@@ -1,5 +1,5 @@
 <?php
-//About Page Content
+//Contact Page Content
 ?>
 
 <?php if( get_field('contact_photo_header', 'option') ): ?>
