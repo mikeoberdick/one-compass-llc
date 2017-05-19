@@ -45,7 +45,7 @@
 
 	<div class="row mb-5">
 		<div class = "col-sm-12 text-center">
-			<div class = "horizontalSep"></div>
+			<div class = "horizontalSep mb-3"></div>
 			<a href = "<?php echo bloginfo('url'); ?>" class = "mr-3">Homepage</a><a href = "<?php echo bloginfo('url'); ?>/contact">Contact Us</a>
 		</div>
 	</div><!-- .row -->

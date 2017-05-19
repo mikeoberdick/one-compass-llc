@@ -9294,8 +9294,8 @@ a {
   .logoContainer .siteTitle {
     color: #ffffff;
     margin-left: 25px;
-    margin-top: 15px;
-    font-size: 25px; }
+    font-size: 25px;
+    align-self: center; }
 
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/
