@@ -46,10 +46,27 @@
 		</div>
 	</div>
 
-	<div class="row mb-5">
-		<div class = "col-sm-12 text-center">
-			<div class = "horizontalSep mb-3"></div>
-			<a href = "<?php echo bloginfo('url'); ?>" class = "mr-3">Homepage</a><a href = "<?php echo bloginfo('url'); ?>/about">About Us</a>
+	<div class="row mb-3">
+		<div class = "col-sm-6 offset-sm-3">
+			<div class = "horizontalSep"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class = "col-md-3 offset-md-3 text-center mb-5">
+			<?php if( get_field('homepage_blurb', 'option') ): ?>	
+			<?php the_field('homepage_blurb', 'option'); ?>
+			<?php endif; ?>
+			
+			<a href = "<?php echo bloginfo('url'); ?>" class = "btn btn-primary btn-large">Homepage</a>
+		</div>
+
+		<div class = "col-md-3 text-center">
+			<?php if( get_field('about_blurb', 'option') ): ?>	
+			<?php the_field('about_blurb', 'option'); ?>
+			<?php endif; ?>
+
+			<a href = "<?php echo bloginfo('url'); ?>/about" class = "btn btn-primary btn-large text-center secondBtn">About Us</a>
 		</div>
 	</div><!-- .row -->
 

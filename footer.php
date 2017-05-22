@@ -43,13 +43,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="row site-info">
+					<div class="row site-info ftrLeft">
 						<div class ="col-sm-6">
 							<span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span><br />
 							<p>Follow Us On <a href = "#"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
 						</div>
 						
-						<div class = "col-sm-6 text-right">
+						<div class = "col-sm-6 ftrRight">
 							<span>Website by <a href = "http://www.designs4theweb.com">Designs 4 The Web</a></span>
 						</div>
 

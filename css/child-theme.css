@@ -9261,7 +9261,8 @@ body {
 a {
   color: #ffffff; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #0db02b; }
 
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
@@ -9275,13 +9276,21 @@ a {
 .navbar {
   background-color: #666666;
   border-bottom: solid 10px #000000; }
+  @media (max-width: 767px) {
+    .navbar .container {
+      text-align: center; } }
   .navbar a {
     color: #ffffff; }
     .navbar a:hover {
       color: #0db02b; }
+  .navbar .navbar-toggler {
+    background-color: black; }
 
 #navbarNavDropdown {
   justify-content: flex-end; }
+  @media (max-width: 767px) {
+    #navbarNavDropdown {
+      text-align: center; } }
 
 .logoContainer {
   height: 100px;
@@ -9322,6 +9331,10 @@ a {
     flex-direction: column;
     justify-content: center; }
 
+@media (min-width: 768px) {
+  .secondBtn {
+    margin-left: 1.5rem; } }
+
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
 /*------------------------------------------------*/
@@ -9338,6 +9351,9 @@ a {
   #wrapper-footer #footerWidgets {
     padding: 25px 0;
     color: #ffffff; }
+    @media (max-width: 767px) {
+      #wrapper-footer #footerWidgets .widget:first-of-type {
+        margin-bottom: 25px; } }
   #wrapper-footer h5 {
     padding-bottom: 5px;
     border-bottom: solid 2px;
@@ -9365,6 +9381,15 @@ a {
     color: #fff; }
     #bottomFooter a:hover {
       text-decoration: none; }
+  @media (max-width: 767px) {
+    #bottomFooter .ftrLeft {
+      text-align: center; } }
+  @media (min-width: 768px) {
+    #bottomFooter .ftrRight {
+      text-align: right; } }
+  @media (max-width: 767px) {
+    #bottomFooter .ftrRight {
+      text-align: center; } }
 
 /*------------------------------------------------*/
 /*---------------[RESPONSIVE LAYOUTS]-------------*/

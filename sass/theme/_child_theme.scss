@@ -34,6 +34,7 @@ a {
 
 	&:hover {
 		text-decoration: none;
+		color: $brand-primary;
 	}
 }
 
@@ -55,6 +56,12 @@ a {
 	background-color: #666666;
 	border-bottom: solid 10px #000000;
 
+	.container {
+		@include media-breakpoint-down(sm) { 
+			text-align: center;
+		}
+	}
+
 	a {
 		color: #ffffff;
 
@@ -62,10 +69,19 @@ a {
 			color: $brand-primary;
 		}
 	}
+
+	.navbar-toggler {
+		background-color: black;
+	}
 }
 
 #navbarNavDropdown {
 	justify-content: flex-end;
+
+	@include media-breakpoint-down(sm) { 
+			text-align: center;
+		}
+
 }
 
 .logoContainer {
@@ -126,6 +142,12 @@ a {
     }
 }
 
+.secondBtn {
+	@include media-breakpoint-up (md) { 
+			margin-left: 1.5rem;
+		}
+	}
+
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
@@ -147,6 +169,14 @@ a {
 	#footerWidgets {
 		padding: 25px 0;
 		color: #ffffff;
+
+		.widget {
+			&:first-of-type {
+				@include media-breakpoint-down(sm) { 
+				margin-bottom: 25px;
+		}
+			}
+		}
 	}
 
 	h5 {
@@ -190,6 +220,22 @@ a {
 			text-decoration: none;
 		}
 	}
+
+	.ftrLeft {
+		@include media-breakpoint-down(sm) { 
+				text-align: center;
+			}
+	}
+
+	.ftrRight {
+		@include media-breakpoint-up(md) { 
+				text-align: right;
+			}
+
+		@include media-breakpoint-down(sm) { 
+				text-align: center;
+			}
+	}
 }
 
 /*------------------------------------------------*/
@@ -199,6 +245,7 @@ a {
 @include media-breakpoint-up(xs) {  }
 @include media-breakpoint-up(sm) {  }
 @include media-breakpoint-up(md) {  }
+
 @include media-breakpoint-up(lg) {  }
 @include media-breakpoint-up(xl) {  }
 

@@ -32,13 +32,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	
 	<div class = "container logoContainer">
 		<a href = "<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
-		<div class = "siteTitle"><?php echo bloginfo('name') ?></div>
+		<div class = "siteTitle"><a href = "<?php echo site_url(); ?>"><?php echo bloginfo('name') ?></a></div>
 	</div>
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar navbar-toggleable-md">
+		<nav class="navbar navbar-toggleable-sm navbar-inverse">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
