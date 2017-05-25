@@ -3,13 +3,13 @@
 ?>
 
 <?php if( get_field('about_photo_header', 'option') ): ?>
-	<div class="container-fluid">
+	<div class="container">
 	<div class="row mb-5">
 		<div class = "photoHeader col-sm-12">
 			<img src = "<?php the_field('about_photo_header', 'option'); ?>">
 		</div>		
 	</div><!-- .row -->
-</div><!-- .container-fluid -->
+</div><!-- .container -->
 <?php endif; ?>
 
 <div class="container">
